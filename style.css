@@ -85,8 +85,8 @@ nav a:hover {
 #previous-videos a {
   display: block;
   position: relative;
-  width: 250px;
-  height: 140px;
+  width: 450px;
+  height: 340px;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
