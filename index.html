@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metro Media News Show</title>
+	<style>
+		/* Reset default browser styles */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		/* Navigation bar styles */
+		nav {
+			background-color: #1d2c4d;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		}
+		nav ul {
+			display: flex;
+			list-style: none;
+		}
+		nav li {
+			margin-left: 20px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+			transition: all 0.2s ease-in-out;
+		}
+		nav a:hover {
+			color: #aaa;
+		}
+
+		/* Recent video section styles */
+		#recent-video {
+			margin-top: 80px;
+			text-align: center;
+		}
+		#recent-video h2 {
+			font-size: 32px;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+		#recent-video p {
+			font-size: 18px;
+			color: #888;
+			margin-bottom: 30px;
+		}
+		#recent-video iframe {
+			width: 100%;
+			max-width: 800px;
+			height: 450px;
+		}
+
+		/* Previous videos section styles */
+		#previous-videos {
+			margin-top: 80px;
+			text-align: center;
+		}
+		#previous-videos h2 {
+			font-size: 32px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		#previous-videos ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		#previous-videos li {
+			margin-right: 30px;
+			margin-bottom: 30px;
+		}
+		#previous-videos a {
+			display: block;
+			position: relative;
+			width: 250px;
+			height: 140px;
+			overflow: hidden;
+			border-radius: 5px;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+			transition: all 0.2s ease-in-out;
+		}
+		#previous-videos a:hover {
+			box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+		}
+		#previous-videos a img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transform: scale(1);
+			transition: all 0.2s ease-in-out
+        }
+	#previous-videos a:hover img {
+		transform: scale(1.1);
+	}
+	#previous-videos a span {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 10px;
+		background-color: rgba(0,0,0,0.7);
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		opacity: 0;
+		transition: all 0.2s ease-in-out;
+	}
+	#previous-videos a:hover span {
+		opacity: 1;
+	}
+
+	/* Responsive styles */
+	@media only screen and (max-width: 768px) {
+		#recent-video iframe {
+			height: 300px;
+		}
+		#previous-videos a {
+			width: 200px;
+			height: 112.5px;
+		}
+		#previous-videos li {
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	/* @media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  @media screen and (max-width: 768px) {
+  .footer-section {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #1d2c4d;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #1d2c4d;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .footer-section {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-section {
+    flex-basis: 100%;
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav>
+		<h1>Metro Media News Show</h1>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Events</a></li>
+			<li><a href="#">Blog</a></li>
+		</ul>
+	</nav>
+
+    <!-- Recent video section -->
+<section id="recent-video">
+	<h2>Recent Video</h2>
+	<p>Select a video from below to watch the latest episode:</p>
+    <iframe width="728" height="404" src="https://www.youtube.com/embed/4dzD9g0Mh3I" title="jenna ortega at the SAG Award." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
+<!-- Previous videos section -->
+<section id="previous-videos">
+	<h2>Previous Videos</h2>
+	<ul>
+		<li><a href="#" onclick="changeVideo('https://www.youtube.com/embed/KpS1IaLwJs4')">
+			<img src="https://i.ytimg.com/vi/KpS1IaLwJs4/maxresdefault.jpg" alt="Video thumbnail">
+			<span>Episode 1</span>
+		</a></li>
+		<li><a href="#" onclick="changeVideo('https://www.youtube.com/embed/1LhJc-Pvx-8')">
+			<img src="https://i.ytimg.com/vi/1LhJc-Pvx-8/maxresdefault.jpg" alt="Video thumbnail">
+			<span>Episode 2</span>
+		</a></li>
+		<li><a href="#" onclick="changeVideo('https://www.youtube.com/embed/JYsYTxJ0lzc')">
+			<img src="https://i.ytimg.com/vi/JYsYTxJ0lzc/maxresdefault.jpg" alt="Video thumbnail">
+			<span>Episode 3</span>
+		</a></li>
+		<li><a href="#" onclick="changeVideo('https://www.youtube.com/embed/vnJ2l7V4A4s')">
+			<img src="https://i.ytimg.com/vi/vnJ2l7V4A
+            4s/maxresdefault.jpg" alt="Video thumbnail">
+            <span>Episode 4</span>
+            </a></li>
+            <li><a href="#" onclick="changeVideo('https://www.youtube.com/embed/lbiCv7GWmTw')">
+            <img src="https://i.ytimg.com/vi/lbiCv7GWmTw/maxresdefault.jpg" alt="Video thumbnail">
+            <span>Episode 5</span>
+            </a></li>
+            </ul>
+            </section>
+            
+<!-- Footer -->
+<footer>
+	<div class="footer-container">
+	  <div class="footer-section">
+		<h3>About Us</h3>
+		<p>We are a news show that aims to provide the latest and most relevant information to our viewers. Stay updated with us!</p>
+	  </div>
+	  <div class="footer-section">
+		<h3>Links</h3>
+		<ul>
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">About Us</a></li>
+		  <li><a href="#">Events</a></li>
+		  <li><a href="#">Blog</a></li>
+		</ul>
+	  </div>
+	  <div class="footer-section">
+		<h3>Contact Us</h3>
+		<ul>
+		  <li>Email: contact@mymedianews.com</li>
+		  <li>Phone: 555-555-5555</li>
+		  <li>Address: 123 Main St, Anytown USA</li>
+		</ul>
+	  </div>
+	</div>
+	<div class="footer-bottom">
+	  <p>&copy; 2023 My Media News Show. All rights reserved.</p>
+	</div>
+  </footer>
+  
+
+<!-- JavaScript -->
+<script>
+	// Function to change the video in the player
+	function changeVideo(videoUrl) {
+		document.getElementById('video-player').src = videoUrl;
+	}
+</script>
+
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+	  apiKey: "AIzaSyDz-Mf5qpiRNrptgWp4M57xOTz6d_WnT6U",
+	  authDomain: "mmns-d22be.firebaseapp.com",
+	  projectId: "mmns-d22be",
+	  storageBucket: "mmns-d22be.appspot.com",
+	  messagingSenderId: "731425863041",
+	  appId: "1:731425863041:web:50aa6f9201cc9016606480",
+	  measurementId: "G-LE5K104XH5"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+  </script>
+    
+</body>
+</html>

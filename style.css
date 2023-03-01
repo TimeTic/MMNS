@@ -1,0 +1,135 @@
+/* Navigation Bar */
+nav {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Recent Video
+/* Recent Video */
+#recent-video {
+    margin: 100px auto;
+    max-width: 1200px;
+    text-align: center;
+    }
+    
+    #recent-video h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+    
+    #video-player {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    }
+    
+    #video-player iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+    
+    #recent-video p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 30px;
+    }
+    
+    /* Footer */
+    .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    }
+    
+    .footer-section {
+    width: 30%;
+    }
+    
+    .footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+    
+    .footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .footer-section li {
+    margin-bottom: 10px;
+    }
+    
+    .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    .footer-bottom {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    }
+    
+    .footer-bottom p {
+    margin: 0;
+    }
+    
+    /* Responsive Design /
+    @media screen and (max-width: 768px) {
+    / Navigation Bar */
+    nav ul {
+    display: none;
+    }
+    
+    nav .menu-icon {
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+    margin-right: 20px;
+    text-align: center;
+    }
+    
+    /* Footer */
+    .footer-container {
+    flex-direction: column;
+    }
+    
+    .footer-section {
+    margin-bottom: 30px;
+    width: 100%;
+    }
+      
