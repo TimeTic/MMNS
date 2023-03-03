@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metro Media News Show</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		
+
+</style>
+
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav>
+		<h1>Metro Media News Show</h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About us</a></li>
+			<li><a href="#">Events</a></li>
+			<li><a href="#">Blog</a></li>
+		</ul>
+	</nav>
+
+    <!-- Recent video section -->
+<section id="recent-video">
+	<h2>Recent Video</h2>
+	<p>Select a video from below to watch the latest episode:</p>
+    <iframe width="728" height="404" src="https://www.youtube.com/embed/4dzD9g0Mh3I" title="jenna ortega at the SAG Award." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
+<!-- Previous videos section -->
+<section id="previous-videos">
+	<h2>Previous Videos</h2>
+	<ul>
+		<li><a href="#" onclick="changeVideo('https://www.youtube.com/watch?v=DRqBUsOR890')">
+			<iframe width="450" height="300" src="https://www.youtube.com/embed/DRqBUsOR890" title="We Survived 100 Days In DUO Hardcore Minecraft... And Here&#39;s What Happened" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>			<span>Episode 1</span>
+		</a></li>
+		<li><a href="#" onclick="changeVideo('https://www.youtube.com/watch?v=F3KsdeUDSrA')">
+			<iframe width="450" height="300" src="https://www.youtube.com/embed/F3KsdeUDSrA" title="Gotham vs. Gotham-Bot: Can I Beat My AI Clone?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>			<span>Episode 2</span>
+		</a></li>
+		<li><a href="#" onclick="changeVideo('https://www.youtube.com/embed/V4D49YYihQI')">
+			<iframe width="450" height="300" src="https://www.youtube.com/embed/V4D49YYihQI" title="Why Everyone is Buying iPhones Now." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>			<span>Episode 3</span>
+		</a></li>
+		<li><a href="#" onclick="changeVideo('https://www.youtube.com/embed/1_jI86PfJHM')">
+			<iframe width="450" height="300" src="https://www.youtube.com/embed/1_jI86PfJHM" title="Huge Tornadoes Are About To Happen Here…" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <span>Episode 4</span>
+            </a></li>
+            <li><a href="#" onclick="changeVideo('https://www.youtube.com/embed/OxtVdqT2Rbo')">
+				<iframe width="450" height="300" src="https://www.youtube.com/embed/OxtVdqT2Rbo" title="The Day Cristiano Ronaldo Finally Get Revenge Against Lionel Messi and Barcelona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            <span>Episode 5</span>
+            </a></li>
+            </ul>
+            </section>
+            
+<!-- Footer -->
+<footer>
+	<div class="footer-container">
+	  <div class="footer-section">
+		<h3>About Us</h3>
+		<p>We are a news show that aims to provide the latest and most relevant information to our viewers. Stay updated with us!</p>
+	  </div>
+	  <div class="footer-section">
+		<h3>Links</h3>
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="about.html">About Us</a></li>
+		  <li><a href="#">Events</a></li>
+		  <li><a href="#">Blog</a></li>
+		</ul>
+	  </div>
+	  <div class="footer-section">
+		<h3>Contact Us</h3>
+		<ul>
+		  <li>Email: contact@mymedianews.com</li>
+		  <li>Phone: 555-555-5555</li>
+		  <li>Address: 123 Main St, Anytown USA</li>
+		</ul>
+	  </div>
+	</div>
+	<div class="footer-bottom">
+	  <p>&copy; 2023 My Media News Show. All rights reserved.</p>
+	</div>
+  </footer>
+  
+
+<!-- JavaScript -->
+<script src="script.js">
+	
+</script>
+
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+	  apiKey: "AIzaSyDz-Mf5qpiRNrptgWp4M57xOTz6d_WnT6U",
+	  authDomain: "mmns-d22be.firebaseapp.com",
+	  projectId: "mmns-d22be",
+	  storageBucket: "mmns-d22be.appspot.com",
+	  messagingSenderId: "731425863041",
+	  appId: "1:731425863041:web:50aa6f9201cc9016606480",
+	  measurementId: "G-LE5K104XH5"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+  </script>
+
+<script src="app.js" defer></script>
+
+    
+</body>
+</html>
