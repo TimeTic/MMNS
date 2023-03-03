@@ -1,3 +1,19 @@
+// Disable caching for all AJAX requests
+$.ajaxSetup({
+  cache: false
+});
+
+// Disable caching for all browser requests
+window.addEventListener('beforeunload', function() {
+  navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    for (let registration of registrations) {
+      registration.unregister();
+    }
+  });
+});
+
+
+
 // Complete Project Details at: https://RandomNerdTutorials.com/
 
 // Database Paths
