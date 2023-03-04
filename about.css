@@ -151,6 +151,10 @@ border-radius: 4px;
 #contact {
   max-width: 500px;
   margin: 0 auto;
+  background-color: #eaeaea;
+padding: 1em;
+text-align: center;
+border-radius: 4px;
 }
 
 form {
@@ -295,5 +299,26 @@ nav {
     .footer-section {
     flex-basis: 100%;
     }
+    }
+    
+
+    /* Contact us btn */
+
+    .contact-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ff6600;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 4px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    
+    .contact-button:hover {
+      background-color: #e55900;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     }
     
