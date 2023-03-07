@@ -123,7 +123,8 @@ opacity: 1;
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
 #recent-video iframe {
-  height: 300px;
+width: 100%;
+height: auto;
 }
 #previous-videos a {
   width: 200px;
