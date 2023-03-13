@@ -1,0 +1,145 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation bar styles */
+  nav {
+    background-color: #1d2c4d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav li {
+    margin-left: 20px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+  nav a:hover {
+    color: #aaa;
+  }
+
+  .project-box {
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+/* Style for the project image */
+.project-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the project title */
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Style for the project description */
+.project-desc {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-section {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    }
+    
+    /* Footer Styles */
+    
+    footer {
+    background-color: #1d2c4d;
+    color: #fff;
+    padding: 40px 0;
+    }
+    
+    .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    
+    .footer-section {
+    flex: 1;
+    margin-bottom: 30px;
+    }
+    
+    .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .footer-section ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .footer-section li {
+    margin-bottom: 10px;
+    }
+    
+    .footer-section li a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    .footer-bottom {
+    background-color: #1d2c4d;
+    padding: 20px 0;
+    text-align: center;
+    }
+    
+    .footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+    }
+
+
+    .info-box {
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      
+      .info-text {
+        font-size: 18px;
+        line-height: 1.4;
+        margin: 0;
+        color: #333;
+      }
+      
